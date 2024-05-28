@@ -5,8 +5,11 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'roboto': ['Roboto', 'sans-serif'],
+      'roboto-condesed': ['Roboto Condensed', 'sans-serif'],
+    },
     extend: {},
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
-
