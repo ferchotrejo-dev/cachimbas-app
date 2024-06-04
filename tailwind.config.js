@@ -13,6 +13,7 @@ export default {
       backgroundImage: {
         "hero": "url('/img/hero.jpg')",
         "img-4": "url('/img/4.jpg')",
+        "img-7": "url('/img/7.jpg')",
       },
       colors: {
         'black-opacity': 'rgba(0,0,0,0.6)',
