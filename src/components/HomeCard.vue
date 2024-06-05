@@ -5,7 +5,7 @@
 
 <template>
 
-    <div class="border-3 border-red-600">
+    <div class="border-4 border-red-600 rounded-lg p-6 my-6 mx-10 text-white font-bold text-justify">
         <slot></slot>
     </div>
 
