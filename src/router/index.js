@@ -26,6 +26,11 @@ const router = createRouter({
           path: 'dashboard',
           name: 'resumen',
           component: () => import('../views/admin/ResumenView.vue'),
+        },
+        {
+          path: 'create-user',
+          name: 'create-user',
+          component: () => import('../views/admin/CreateUserView.vue')
         }
       ]
     },
