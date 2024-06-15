@@ -6,10 +6,10 @@
 <template>
     <div class=" w-24 xl:w-28 p-3">
 
-        <div class="w-full bg-gray-950 rounded-3xl h-full grid grid-rows-9 justify-items-center">
+        <div class="w-full bg-gray-950 rounded-3xl h-full grid grid-rows-9 justify-items-center hidden md:block">
 
             <!-- Icon User Add -->
-            <div class="my-1">
+            <div class="my-1 inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
@@ -20,7 +20,7 @@
             </div>
 
             <!-- Icon User Search -->
-            <div >
+            <div class="inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-search" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
@@ -31,7 +31,7 @@
             </div>
 
             <!-- Icon Card -->
-            <div >
+            <div class="inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
@@ -42,7 +42,7 @@
             </div>
 
             <!-- Icon Add Bell -->
-            <div >
+            <div class="inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell-plus" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12.5 17h-8.5a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6a2 2 0 1 1 4 0a7 7 0 0 1 4 6v1" />
@@ -53,7 +53,7 @@
             </div>
 
             <!-- Icon Dumbell -->
-            <div >
+            <div class="inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-barbell" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M2 12h1" />
@@ -67,7 +67,7 @@
             </div>
 
             <!-- Icon Report -->
-            <div >
+            <div class="inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report-analytics" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
@@ -79,7 +79,7 @@
             </div>
 
             <!-- Icon Logout -->
-            <div class="row-start-9">
+            <div class="row-start-9 inline-block transition-transform transform-gpu mt-32  hover:scale-125 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
