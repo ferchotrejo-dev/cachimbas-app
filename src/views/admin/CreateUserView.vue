@@ -144,7 +144,7 @@ const createUser = async () => {
                 value="Crear Usuario"
                 class="w-full border-2 border-blue-600 text-white uppercase rounded-xl p-3  text-xl font-bold hover:bg-blue-600">
             </form>
-            <div class="bg-img-4 bg-cover bg-center  rounded-3xl rounded-r-none w-full lg:w-1/2 border-blue-500">
+            <div class="bg-img-4 bg-cover bg-center  rounded-3xl rounded-l-none w-full lg:w-1/2 border-blue-500">
 
             </div>
         </div>
