@@ -13,6 +13,9 @@ const { mutate } = useMutation({
     mutationFn: confirmAccount,
     onError: (error) => {
         errors.value = error
+        setTimeout(() => {
+            errors.value = ''
+        }, 3000);
     },
     onSuccess: (data) => {
         errors.value = data
