@@ -24,6 +24,21 @@ const router = createRouter({
           path: 'confirm-account',
           name: 'confirm-account',
           component: () => import('../views/auth/ConfirmAccountView.vue')
+        },
+        {
+          path: 'request-code',
+          name: 'request-code',
+          component: () => import('../views/auth/RequestNewCodeView.vue')
+        },
+        {
+          path: 'forgot-password',
+          name: 'forgot-password',
+          component: () => import('../views/auth/ForgotPasswordView.vue')
+        },
+        {
+          path: 'new-password',
+          name: 'new-password',
+          component: () => import('../views/auth/NewPasswordView.vue')
         }
       ]
     }
