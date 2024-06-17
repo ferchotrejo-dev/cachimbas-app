@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/homeView.vue';
 import AuthLayout from '../views/auth/AuthLayout.vue'
+import AtletaLayout from '../views/atleta/AtletaLayout.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,18 @@ const router = createRouter({
         {
           path: 'new-password',
           name: 'new-password',
+          component: () => import('../views/auth/NewPasswordView.vue')
+        }
+      ]
+    },
+    {
+      path: '/atleta',
+      name: 'atleta',
+      component: () => AtletaLayout,
+      children: [
+        {
+          path: 'calculadora',
+          name: '/calculadora-inicio',
           component: () => import('../views/auth/NewPasswordView.vue')
         }
       ]
