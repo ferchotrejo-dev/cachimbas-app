@@ -50,8 +50,8 @@ const router = createRouter({
       children: [
         {
           path: 'calculadora',
-          name: '/calculadora-inicio',
-          component: () => import('../views/auth/NewPasswordView.vue')
+          name: 'calculadora-inicio',
+          component: () => import('../views/atleta/CalculadoraView.vue')
         }
       ]
     }
