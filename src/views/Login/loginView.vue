@@ -5,7 +5,7 @@
     import { useMutation } from '@tanstack/vue-query'
     import { useRouter } from 'vue-router'
 
-    import Logo from '/src/components/Logo.vue';
+    import Logo from '/src/components/LogoSM.vue';
     import Alerta from '/src/components/Alerta.vue';
     
 

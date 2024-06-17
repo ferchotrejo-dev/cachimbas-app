@@ -1,8 +1,7 @@
 <script setup>
 
-    import Logo from '../components/Logo.vue';
     import HomeCard from '../components/HomeCard.vue';
-
+    import LogoSM from '../components/LogoSM.vue';
 </script>
 
 <template>
@@ -12,7 +11,7 @@
         <section class="bg-hero h-screen bg-cover bg-center">
             <!-- Header -->
             <div class="p-4 w-full flex justify-between flex-wrap">
-                <Logo/>
+                <LogoSM/>
                 <RouterLink 
                     class="uppercase text-white font-bold text-2xl my-3 md:m-3"
                     :to=" { name: 'login'} "
