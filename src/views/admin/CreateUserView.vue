@@ -51,7 +51,7 @@ const createUser = async () => {
 <template>
     
     <div class="grid col-span-11 ">
-
+        
         <section class="w-full flex justify-center">
             <div class="bg-gray-950 w-full rounded-3xl h-full flex flex-wrap">
                 <form @submit.prevent="createUser" class="w-full lg:w-1/2 p-16 flex justify-center flex-wrap flex-col">
