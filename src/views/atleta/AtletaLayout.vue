@@ -1,6 +1,6 @@
 <script setup>
 
-    import Logo from '@/components/Logo.vue';
+    import LogoMenu from '@/components/atleta/LogoMenu.vue';
     import AtletaMenu from '@/components/atleta/AtletaMenu.vue';
     
 </script>
@@ -9,7 +9,7 @@
 
     <section class="grid grid-cols-12 m-2 mt-8">
         <div class="bg-gray-950 p-4  md:p-4 rounded-3xl flex justify-center  col-span-12  xl:col-span-10 col-start-1 md:col-start-2 xl:col-start-2 sm:col-span-12">
-            <Logo />
+            <LogoMenu/>
         </div>
     </section>
 

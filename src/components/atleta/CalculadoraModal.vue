@@ -94,7 +94,7 @@
                         id="porcentaje"
                         type="number"
                         placeholder="Ingresa el porcentaje %"
-                        class="p-2 rounded-2xl text-center font-bold bg-gray-900 text-xl text-white uppercase placeholder:text-white"
+                        class="p-2 rounded-2xl text-center font-bold bg-gray-900 text-xl text-white uppercase placeholder:font-medium"
                         :value="porcentaje"
                         @input="$emit('update:porcentaje', +$event.target.value)"
                     >
@@ -113,7 +113,7 @@
                         id="barra"
                         :value="barra"
                         @input="$emit('update:barra', +$event.target.value)"
-                        class="p-2 rounded-2xl text-center font-bold bg-gray-900 text-xl text-white uppercase"
+                        class="p-2 rounded-2xl text-center font-bold bg-gray-900 text-lg text-white uppercase"
                     >
                         <option value="45" disabled selected>-- Selecciona el peso de tú barra --</option>
                         <option value="45">45 LB</option>
