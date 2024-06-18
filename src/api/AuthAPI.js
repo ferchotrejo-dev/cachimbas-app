@@ -99,3 +99,13 @@ export async function getUser() {
         }
     }
 }
+
+export async function getRols() {
+    try {
+        const { data } = await api.get('/admin/rols')
+        console.log(data)
+        return data
+    } catch (error) {
+        console.log(error);
+    }
+}

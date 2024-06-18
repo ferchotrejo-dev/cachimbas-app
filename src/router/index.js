@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
+
 import HomeView from '../views/homeView.vue';
 import AuthLayout from '../views/auth/AuthLayout.vue'
 import AtletaLayout from '../views/atleta/AtletaLayout.vue'
+
+import AdminLayout from '../views/admin/AdminLayout.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -54,7 +57,24 @@ const router = createRouter({
           component: () => import('../views/atleta/CalculadoraView.vue')
         }
       ]
-    }
+    },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: AdminLayout,
+      children: [
+        {
+          path: 'dashboard',
+          name: 'resumen',
+          component: () => import('../views/admin/ResumenView.vue'),
+        },
+        {
+          path: 'create-user',
+          name: 'create-user',
+          component: () => import('../views/admin/CreateUserView.vue')
+        }
+      ]
+    },
   ]
 })
 
