@@ -9,25 +9,25 @@
 
             <!-- Icon User Add -->
             <div class="my-1 inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus md:w-14 md:h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-            <path d="M16 19h6" />
-            <path d="M19 16v6" />
-            <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
-        </svg>
-    </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus md:w-14 md:h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                    <path d="M16 19h6" />
+                    <path d="M19 16v6" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
+                </svg>
+            </div>
 
-    <!-- Icon User Search -->
-    <div class="inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-search md:w-14 md:h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-            <path d="M6 21v-2a4 4 0 0 1 4 -4h1.5" />
-            <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-            <path d="M20.2 20.2l1.8 1.8" />
-        </svg>
-    </div>
+            <!-- Icon User Search -->
+            <div class="inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-search md:w-14 md:h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h1.5" />
+                    <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M20.2 20.2l1.8 1.8" />
+                </svg>
+            </div>
 
             <!-- Icon Card -->
             <div class="inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer">

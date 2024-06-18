@@ -15,7 +15,7 @@
 
     <div class="grid grid-cols-12 gap-4  ">
         
-        <AtletaMenu class="hidden md:block">
+        <AtletaMenu class="hidden md:block h-fit">
             
         </AtletaMenu>
 

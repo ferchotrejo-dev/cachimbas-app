@@ -115,7 +115,7 @@
                         @input="$emit('update:barra', +$event.target.value)"
                         class="p-2 rounded-2xl text-center font-bold bg-gray-900 text-xl text-white uppercase"
                     >
-                        <option value="45">-- Selecciona el peso de tú barra --</option>
+                        <option value="45" disabled selected>-- Selecciona el peso de tú barra --</option>
                         <option value="45">45 LB</option>
                         <option value="35">35 LB</option>
                     </select>

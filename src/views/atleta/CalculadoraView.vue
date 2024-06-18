@@ -75,14 +75,14 @@
         <div class="flex justify-center">
 
             <PR 
-                class="md:px-10 py-10 px-10 md:my-10 md:mx-10 mx-6 md:w-3/4 xl:w-1/3 uppercase"
+                class="m-6 md:w-3/4 lg:w-1/2 xl:w-1/3 2xl:w-1/3 uppercase"
                 v-if="pr === 0"
                 @definir-PR = "definirPR"
             />
 
             <div
                 v-else
-                class=" md:px-10 py-10 px-10  md:my-10 md:mx-10 mx-6 md:w-3/4 xl:w-1/3"
+                class="  m-6 md:w-3/4 lg:w-1/2 xl:w-1/3 2xl:w-1/3"
             >
                 <h1
                     class="text-4xl md:text-6xl font-semibold text-center text-white"
@@ -123,7 +123,7 @@
 
             <!-- MAin Porcentajes -->
             <div
-                class="mt-10 mb-36 px-14 pb-14 lg:mx-32"
+                class=" mb-36 px-14 pb-14 lg:mx-32"
             >
 
                 <h2 class="uppercase text-center text-white font-bold text-3xl md:text-3xl py-3">
@@ -131,7 +131,7 @@
                 </h2>
 
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4"
                 >
                     <Porcentaje 
                         v-for="porcentaje in porcentajes"
@@ -141,10 +141,6 @@
                 </div>
 
             </div>
-
-        <div class="bg-img-3 h-full">
-
-        </div>
 
     </div>
 
