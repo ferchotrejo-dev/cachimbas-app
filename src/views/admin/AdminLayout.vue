@@ -1,8 +1,8 @@
 
 <script setup>
 
-    import Logo from '@/components/Logo.vue';
-    import AdminMenu from '@/components/AdminMenu.vue';
+    import Logo from '@/components/admin/LogoAdminMenu.vue';
+    import AdminMenu from '@/components/admin/AdminMenu.vue';
     import CreateUserView from './CreateUserView.vue';
 </script>
 

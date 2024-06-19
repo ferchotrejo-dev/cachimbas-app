@@ -1,7 +1,7 @@
 
 <script setup>
 
-    import AdminCard from '@/components/AdminCard.vue';
+    import AdminCard from '@/components/admin/AdminCard.vue';
 
 </script>
 
