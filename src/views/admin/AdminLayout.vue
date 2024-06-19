@@ -23,7 +23,6 @@
         <div class="col-span-12 xl:col-span-10 p-3 md:col-start-2 m-0">
             <main class=" w-full">
                 <RouterView></RouterView>
-                <CreateUserView/>
             </main>
         </div>
         
