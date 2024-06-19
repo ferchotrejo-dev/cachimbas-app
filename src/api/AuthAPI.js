@@ -42,7 +42,9 @@ export async function authenticateUser(formData) {
         const url = '/auth/login'
         const { data } = await api.post(url, formData)
         localStorage.setItem('AUTH_TOKEN', data)
-        return data
+        const user = await getUser()
+        return user.rol
+
     } catch (error) {
         if (isAxiosError(error) && error.response) {
             throw new Error(error.response.data.error)
@@ -89,10 +91,7 @@ export async function updatePasswordWithToken(formData, token) {
 export async function getUser() {
     try {
         const { data } = await api.get('/auth/user')
-        const response = userSchema.safeParse(data)
-        if (response.success) {
-            return response.data
-        }
+        return data
     } catch (error) {
         if (isAxiosError(error) && error.response) {
             throw new Error(error.response.data.error)
@@ -103,7 +102,6 @@ export async function getUser() {
 export async function getRols() {
     try {
         const { data } = await api.get('/admin/rols')
-        console.log(data)
         return data
     } catch (error) {
         console.log(error);
