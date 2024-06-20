@@ -17,6 +17,7 @@ export default {
         "img-6": "url('/img/6.jpg')",
         "img-7": "url('/img/7.jpg')",
         "img-8": "url('/img/8.jpg')",
+        "img-2": "url('/img/2.jpg')",
         "img-9": "url('/img/9.jpg')",
       },
       colors: {

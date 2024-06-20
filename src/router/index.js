@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import HomeView from '../views/homeView.vue';
-import AuthLayout from '../views/auth/AuthLayout.vue'
-import AtletaLayout from '../views/atleta/AtletaLayout.vue'
-
+import AuthLayout from '../views/auth/AuthLayout.vue';
+import AtletaLayout from '../views/atleta/AtletaLayout.vue';
+import Dashboard from '../views/atleta/DashboardAtleta.vue';
 import AdminLayout from '../views/admin/AdminLayout.vue';
+import VisualizarAviso from '../views/atleta/VisualizarAviso.vue';
+import AgregarInformacioAtl from '../views/atleta/AgregarInformacioAtl.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -55,6 +57,21 @@ const router = createRouter({
           path: 'calculadora',
           name: 'calculadora-inicio',
           component: () => import('../views/atleta/CalculadoraView.vue')
+        },
+        {
+          path: 'dashboard-atleta',
+          name: 'dashboard-atleta',
+          component:() => import('../views/atleta/DashboardAtleta.vue')
+        },
+        {
+          path: 'visualiza-avisoatl',
+          name: 'visualiza-avisoatl',
+          component:() => import('../views/atleta/VisualizarAviso.vue')
+        },
+        {
+          path: 'agregar-infoatl',
+          name: 'agregar-infoatl',
+          component:() => import('../views/atleta/AgregarInformacioAtl.vue')
         }
       ]
     },
@@ -75,6 +92,7 @@ const router = createRouter({
         }
       ]
     },
+   
   ]
 })
 
