@@ -1,6 +1,4 @@
 
-
-
 <template>
     
     <div class="grid col-span-11 ">
