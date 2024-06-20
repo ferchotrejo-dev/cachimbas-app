@@ -5,11 +5,10 @@ import CreateUserView from './CreateUserView.vue';
 import { useAuth } from '@/helpers/useAuth';
 import { useRouter } from 'vue-router';
 
-const { isError } = useAuth()
-const router = useRouter()
-console.log(isError.value)
-if (!isError) {
-    router.push('/login')
+const { data, isError } = useAuth();
+const router = useRouter();
+if (!isError && data.value && data.value.rol && data.value.rol.toString() === '666100f6f4a96985bdc69840') {
+    router.push('/login');
 }
 
 </script>
@@ -31,7 +30,6 @@ if (!isError) {
         <div class="col-span-12 xl:col-span-10 p-3 md:col-start-2 m-0">
             <main class=" w-full">
                 <RouterView></RouterView>
-                <CreateUserView />
             </main>
         </div>
 

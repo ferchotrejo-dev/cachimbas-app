@@ -1,7 +1,10 @@
 import { getUser } from "@/api/AuthAPI"
-import { useQuery } from "@tanstack/vue-query"
+import { useQuery, useQueryClient } from "@tanstack/vue-query"
 
 export const useAuth = () => {
+    const queryClient = useQueryClient()
+
+    queryClient.invalidateQueries({ queryKey: ['user'] })
     const { data, isLoading, isError } = useQuery({
         queryKey: ['user'],
         queryFn: getUser,
@@ -9,10 +12,6 @@ export const useAuth = () => {
         refetchOnWindowFocus: false
     })
 
-    return {
-        data,
-        isLoading,
-        isError
-    }
+    return { data, isLoading, isError }
 }
 

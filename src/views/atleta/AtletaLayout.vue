@@ -5,12 +5,13 @@ import AtletaMenu from '@/components/atleta/AtletaMenu.vue';
 import { useAuth } from '@/helpers/useAuth';
 import { useRouter } from 'vue-router';
 
-const { data, isError } = useAuth()
-const router = useRouter()
+const { data, isError } = useAuth();
+const router = useRouter();
 
-if (!isError) {
-    router.push('/login')
+if (!isError && data.value && data.value.rol && data.value.rol.toString() === '666100f1f4a96985bdc6983e') {
+    router.push('/login');
 }
+
 
 </script>
 
