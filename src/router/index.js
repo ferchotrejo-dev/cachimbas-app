@@ -72,7 +72,12 @@ const router = createRouter({
           path: 'create-user',
           name: 'create-user',
           component: () => import('../views/admin/CreateUserView.vue')
-        }
+        },
+        {
+          path: 'create-membership',
+          name: 'create-membership',
+          component: () => import('../views/admin/CreateMembershipView.vue')
+        },
       ]
     },
   ]
