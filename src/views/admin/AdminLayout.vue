@@ -3,7 +3,7 @@
 
     import Logo from '@/components/admin/LogoAdminMenu.vue';
     import AdminMenu from '@/components/admin/AdminMenu.vue';
-    import CreateUserView from './CreateUserView.vue';
+
 </script>
 
 <template>
