@@ -1,7 +1,43 @@
+<script setup>
+  import { ref } from 'vue';
+  import ModalMembresia from '@/components/admin/ModalMembresia.vue';
+  import ConfirmacionModal from '@/components/admin/ConfirmacionModal.vue';
+  import MembershipCard from '@/components/admin/MembershipCard.vue';
+  
+  const modalOpen = ref(false);
+  const confirmacionOpen = ref(false);
+  const selectedUsers = ref([]);
+  
+  // Funciones para abrir y cerrar los modales
+  const openModal = () => {
+    modalOpen.value = true;
+  };
+  
+  const closeModal = () => {
+    modalOpen.value = false;
+  };
+  
+  const openConfirmacionModal = () => {
+    confirmacionOpen.value = true;
+  };
+  
+  const closeConfirmacionModal = () => {
+    confirmacionOpen.value = false;
+  };
+  
+  // Función para manejar el cierre del modal de confirmación y finalizar la asignación
+  const finalizarAsignacion = () => {
+    console.log('Usuarios seleccionados:', selectedUsers.value);
+    closeConfirmacionModal();
+    // Mostrar mensaje de membresía asignada correctamente
+  };
+  </script>
+  
+
 <template>
-    <div class="bg-gray-950 w-full rounded-3xl p-5 h-full flex gap-5">
+    <div class="bg-gray-950 w-full rounded-3xl p-5 h-full flex gap-5 flex-wrap lg:flex-nowrap">
       <!-- Formulario de membresía -->
-      <section class="w-1/2">
+      <section class="lg:w-1/2 flex justify-center flex-wrap">
         <h1 class="text-white uppercase text-2xl font-bold mb-7 text-center">Agregar membresia</h1>
   
         <form action="">
@@ -82,11 +118,13 @@
       </section>
   
       <!-- Sección de Usuarios -->
-      <section class="w-1/2">
-        <h1 class="text-white uppercase text-2xl font-bold mb-7 text-center">Usuarios en la membresia</h1>
-        <!-- Aquí puedes mostrar los usuarios seleccionados -->
-        <div>
-          <!-- Implementa la lógica de mostrar usuarios aquí -->
+      <section class="lg:w-1/2 w-full">
+        <h1 class="text-white uppercase text-2xl font-bold mb-7 text-center mt-8 lg:mt-0">Usuarios en la membresia</h1>
+        <!-- usuarios seleccionados -->
+        <div class="w-full flex justify-center flex-wrap gap-4">
+          <MembershipCard> 
+            luis fernando bernal trejo
+          </MembershipCard>
         </div>
       </section>
   
@@ -97,37 +135,4 @@
     </div>
   </template>
   
-  <script setup>
-  import { ref } from 'vue';
-  import ModalMembresia from '@/components/admin/ModalMembresia.vue';
-  import ConfirmacionModal from '@/components/admin/ConfirmacionModal.vue';
-  
-  const modalOpen = ref(false);
-  const confirmacionOpen = ref(false);
-  const selectedUsers = ref([]);
-  
-  // Funciones para abrir y cerrar los modales
-  const openModal = () => {
-    modalOpen.value = true;
-  };
-  
-  const closeModal = () => {
-    modalOpen.value = false;
-  };
-  
-  const openConfirmacionModal = () => {
-    confirmacionOpen.value = true;
-  };
-  
-  const closeConfirmacionModal = () => {
-    confirmacionOpen.value = false;
-  };
-  
-  // Función para manejar el cierre del modal de confirmación y finalizar la asignación
-  const finalizarAsignacion = () => {
-    console.log('Usuarios seleccionados:', selectedUsers.value);
-    closeConfirmacionModal();
-    // Mostrar mensaje de membresía asignada correctamente
-  };
-  </script>
   

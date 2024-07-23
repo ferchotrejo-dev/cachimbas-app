@@ -5,7 +5,7 @@
 <template>
     <div class=" w-24 xl:w-28 p-3">
 
-        <div class="w-full md:w-4/5 lg:w-4/5 xl:w-5/5 bg-gray-950 rounded-3xl h-full grid grid-rows-9 justify-items-center hidden md:block">
+        <div class="w-full md:w-4/5 lg:w-4/5 xl:w-5/5 bg-gray-950 rounded-3xl h-auto grid grid-rows-9 justify-items-center hidden md:block">
 
             <!-- Icon User Add -->
             <div class="my-1 inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer">

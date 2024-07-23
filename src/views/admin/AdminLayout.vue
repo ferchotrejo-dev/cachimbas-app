@@ -16,7 +16,7 @@
 
     <div class="grid grid-cols-12 gap-4  ">
         
-        <AdminMenu class="hidden md:block">
+        <AdminMenu class="hidden md:block ">
             
         </AdminMenu>
 
