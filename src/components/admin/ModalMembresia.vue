@@ -1,31 +1,35 @@
-
 <script setup>
-import { defineProps, ref, computed } from 'vue';
+import { defineProps, ref, computed, watch } from 'vue';
 import ConfirmacionModal from '@/components/admin/ConfirmacionModal.vue';
+import { getAllAthletes } from '@/api/AdminAPI';
+import { useQuery } from '@tanstack/vue-query';
 
 const props = defineProps({
   isOpen: Boolean,
   closeModal: Function
 });
 
-const users = ref([
-  { id: 1, name: 'Luis Fernando Bernal Trejo', email: 'fercho@gmail.com' },
-  { id: 2, name: 'Juan Carlos Comstantino Cardenas', email: 'juan@gmail.com' },
-  { id: 3, name: 'Erick Sebastian Vargas Garcia', email: 'sebas@gmail.com' },
-  { id: 4, name: 'Jenny Rivera Martinez', email: 'jenny@gmail.com' },
-]);
-
-const selectedUsers = ref([]);
+const emit = defineEmits(['agregarAtleta']);
 const searchQuery = ref('');
 const confirmacionModalOpen = ref(false);
+const selectedUsers = ref([])
+
+const { data: atletasData } = useQuery({
+  queryKey: ['atletas'],
+  queryFn: getAllAthletes
+});
 
 
 const filteredUsers = computed(() => {
-  return users.value.filter(user => user.name.toLowerCase().includes(searchQuery.value.toLowerCase()));
+  return atletasData.value.filter(user =>
+    user.id_usuario.nombre.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
+    user.id_usuario.apellido.toLowerCase().includes(searchQuery.value.toLowerCase())
+  );
 });
 
 const closeModalAndReturn = () => {
   props.closeModal();
+  confirmacionModalOpen.value = false;
 };
 
 const confirmarAsignacionMembresia = () => {
@@ -36,8 +40,8 @@ const cerrarConfirmacionModal = () => {
   confirmacionModalOpen.value = false;
 };
 
-const finalizarAsignacion = () => {
-  console.log('Asignación finalizada para los usuarios:', selectedUsers.value);
+const finalizarAsignacion = (usuariosSeleccionados) => {
+  emit('agregarAtleta', usuariosSeleccionados)
   closeModalAndReturn();
 };
 
@@ -52,48 +56,45 @@ const finalizarAsignacion = () => {
       </div>
 
       <!-- Barra de búsqueda -->
-      <input
-        type="text"
-        v-model="searchQuery"
-        placeholder="Buscar usuario..."
-        class="uppercase bg-gray-800 rounded-xl text-center p-2 w-full font-bold text-white mb-4"
-      />
+      <input type="text" v-model="searchQuery" placeholder="Buscar usuario..."
+        class="uppercase bg-gray-800 rounded-xl text-center p-2 w-full font-bold text-white mb-4" />
 
       <!-- Lista de usuarios -->
       <div class="overflow-y-auto max-h-60 mb-4">
         <div v-if="filteredUsers.length === 0" class="uppercase text-white text-center py-4">
           No se encontraron usuarios.
         </div>
-        <div
-          v-for="(user, index) in filteredUsers" :key="index" 
-          class="flex mb-2 w-full overscroll-auto max-h-max"
-        >
+        <div v-for="athlete in filteredUsers" :key="athlete._id" class="flex mb-2 w-full overscroll-auto max-h-max">
           <label class="flex text-white m-1">
-            <input type="checkbox" v-model="selectedUsers" :value="user.id" class="form-checkbox h-4 w-4 text-blue-600 rounded">
-            <span class="ml-2 uppercase">{{ user.name }}</span>
+            <input type="checkbox" v-model="selectedUsers" :value="athlete"
+              class="form-checkbox h-4 w-4 text-blue-600 rounded">
+            <span class="ml-2 uppercase">{{ athlete.id_usuario.nombre }} {{ athlete.id_usuario.apellido }}</span>
           </label>
         </div>
       </div>
 
       <!-- Botones -->
       <div class="flex justify-end">
-        <button @click="closeModalAndReturn" class=" uppercase border-2 border-gray-500 text-white px-4 py-2 rounded-xl mr-2 hover:bg-gray-500">
+        <button @click="closeModalAndReturn"
+          class="uppercase border-2 border-gray-500 text-white px-4 py-2 rounded-xl mr-2 hover:bg-gray-500">
           Regresar
         </button>
-        <button @click="confirmarAsignacionMembresia" class=" uppercase border-2 border-green-600 text-white px-4 py-2 rounded-xl hover:bg-green-600">
+        <button @click="confirmarAsignacionMembresia"
+          class="uppercase border-2 border-green-600 text-white px-4 py-2 rounded-xl hover:bg-green-600">
           Finalizar
         </button>
       </div>
 
       <!-- Modal de confirmación -->
-      <ConfirmacionModal :isOpen="confirmacionModalOpen" :closeModal="cerrarConfirmacionModal" :selectedUsers="selectedUsers" :users="users" @confirm="finalizarAsignacion" />
+      <ConfirmacionModal :isOpen="confirmacionModalOpen" :closeModal="cerrarConfirmacionModal"
+        :selectedUsers="selectedUsers" @confirm="finalizarAsignacion" />
     </div>
   </div>
 </template>
 
 <style scoped>
 .max-h-60 {
-  max-height: 15rem; 
+  max-height: 15rem;
 }
 
 .form-checkbox {
