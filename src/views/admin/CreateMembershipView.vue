@@ -72,7 +72,7 @@ const agregarAtleta = (atletas) => {
   <div class="bg-gray-950 w-full rounded-3xl p-5 h-full flex gap-5 flex-wrap lg:flex-nowrap">
     <!-- Formulario de membresía -->
     <section class="lg:w-1/2 flex justify-center flex-wrap">
-      <h1 class="text-white uppercase text-2xl font-bold mb-7 text-center">Agregar membresía</h1>
+      <h1 class="text-white uppercase text-2xl font-bold mb-7 text-center w-full">Agregar membresía</h1>
       <Alerta v-if="errors">
         {{ errors }}
       </Alerta>
