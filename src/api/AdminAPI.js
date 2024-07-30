@@ -25,6 +25,30 @@ export async function createMembership(formData) {
     }
 }
 
+export async function getAllMemberships() {
+    try {
+        const url = '/admin/memberships'
+        const { data } = await api.get(url)
+        return data
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
+        }
+    }
+}
+
+export async function getMembershipById(id) {
+    try {
+        const url = `/admin/memberships/${id}`
+        const { data } = await api.get(url)
+        return data
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
+        }
+    }
+}
+
 export async function getAllAthletes() {
     try {
         const url = '/admin/atletas'

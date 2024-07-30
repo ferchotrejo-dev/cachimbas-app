@@ -84,8 +84,8 @@ const router = createRouter({
           component: () => import('../views/admin/MembershipView.vue')
         },
         {
-          path: 'viewDetails-membership',
-          name: 'viewDetails-membership',
+          path: 'viewDetails-membership/:id',
+          name: 'viewDetails-membership/:id',
           component: () => import('../views/admin/MembershipDetails.vue')
         },
       ]
