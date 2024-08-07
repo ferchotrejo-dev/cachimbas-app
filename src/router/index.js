@@ -88,6 +88,16 @@ const router = createRouter({
           name: 'viewDetails-membership/:id',
           component: () => import('../views/admin/MembershipDetails.vue')
         },
+        {
+          path: 'view-users',
+          name: 'view-users',
+          component: () => import('../views/admin/UsersView.vue')
+        },
+        {
+          path: 'user-details',
+          name: 'user-details',
+          component: () => import('../views/admin/UserDetails.vue'),
+        }
       ]
     },
   ]
