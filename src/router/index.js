@@ -52,6 +52,11 @@ const router = createRouter({
       component: () => AtletaLayout,
       children: [
         {
+          path: 'dashboard',
+          name: 'resumen',
+          component: () => import('../views/atleta/AtletaDashboard.vue'),
+        },
+        {
           path: 'calculadora',
           name: 'calculadora-inicio',
           component: () => import('../views/atleta/CalculadoraView.vue')
