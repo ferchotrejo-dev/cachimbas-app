@@ -53,7 +53,7 @@ const router = createRouter({
       children: [
         {
           path: 'dashboard',
-          name: 'resumen',
+          name: 'dashboard',
           component: () => import('../views/atleta/AtletaDashboard.vue'),
         },
         {
