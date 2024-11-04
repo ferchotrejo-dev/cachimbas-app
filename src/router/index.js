@@ -60,6 +60,11 @@ const router = createRouter({
           path: 'calculadora',
           name: 'calculadora-inicio',
           component: () => import('../views/atleta/CalculadoraView.vue')
+        },
+        {
+          path: 'record',
+          name: 'record',
+          component: () => import('../views/atleta/AtletaExercice.vue')
         }
       ]
     },

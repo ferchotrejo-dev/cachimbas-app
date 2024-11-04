@@ -7,7 +7,7 @@
 <template>
     <div class="bg-gray-950 w-full rounded-3xl p-10 ">
 
-        <div class="border-2 border-gray-500 rounded-xl p-6 flex justify-between">
+        <div class="border-2 border-gray-500 rounded-xl p-6 flex justify-between flex-wrap gap-4">
             <p class="text-white uppercase text-xl">Tipo de membresia: <span class="font-bold">individual</span></p>
             <p class="text-white uppercase text-xl">Fecha de pago: <span class="font-bold">01/10/2024</span></p>
         </div>
@@ -18,10 +18,10 @@
         <h1 class="text-white uppercase text-2xl font-bold mb-4">Resumen de logros</h1>
 
         <!-- Cards -->
-        <div class="flex justify-center gap-8">
+        <div class="flex justify-center gap-8 flex-wrap xl:flex-nowrap">
 
             <!-- Card PR -->
-            <div class="w-1/6">
+            <div class="w-full 2xl:w-1/6">
                 <div class="border-2 border-gray-500 rounded-xl flex justify-center items-center">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-barbell">
@@ -41,7 +41,7 @@
             </div>
 
             <!-- Card SKILL -->
-            <div class="w-1/6">
+            <div class="w-full 2xl:w-1/6">
                 <div class="border-2 border-gray-500 rounded-xl flex justify-center items-center">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-stars">
@@ -57,7 +57,7 @@
             </div>
 
             <!-- Card BENCHMARK -->
-            <div class="w-1/6">
+            <div class="w-full 2xl:w-1/6">
                 <div class="border-2 border-gray-500 rounded-xl flex justify-center items-center">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-medal-2">
@@ -74,7 +74,7 @@
             </div>
 
             <!-- Card Scores -->
-            <div class="w-1/6">
+            <div class="w-full 2xl:w-1/6">
                 <div class="border-2 border-gray-500 rounded-xl flex justify-center items-center">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-award">
