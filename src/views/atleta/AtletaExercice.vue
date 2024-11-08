@@ -6,10 +6,10 @@
 <template >
 
     <!-- Container -->
-    <div class="w-full flex gap-4">
+    <div class="w-full grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 justify-around">
 
         <!-- PR -->
-        <div class="bg-gray-950 w-1/4 rounded-3xl p-5 flex justify-center flex-wrap flex-col">
+        <div class="bg-gray-950 w-full rounded-3xl p-5 flex justify-center flex-wrap flex-col">
             <div class="flex justify-center flex-col items-center">
                 <h1 class="text-white text-3xl uppercase font-bold text-center">Personal Record</h1>
                 <div>
@@ -25,19 +25,16 @@
                     </svg>
                 </div>
             </div>
-                
             <div class="my-3 gap-1 w-full flex flex-wrap">
                 <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-blue-600 rounded-xl p-3 text-center hover:bg-blue-600">Agregar PR</a>
                 <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-red-600 rounded-xl p-3 text-center hover:bg-red-600">Visualizar PR</a>
             </div>
         </div>
-            
-        
 
         <!-- Skill -->
-        <div class="bg-gray-950 w-1/4 rounded-3xl p-5 flex justify-center flex-wrap flex-col">
+        <div class="bg-gray-950 w-full rounded-3xl p-5 flex justify-center flex-wrap flex-col">
             <div class="flex justify-center flex-col items-center">
-                <h1 class="text-white text-3xl uppercase font-bold">skill</h1>
+                <h1 class="text-white text-3xl uppercase font-bold">Skill</h1>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-stars">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -47,18 +44,14 @@
                     </svg>
                 </div>
             </div>
-                
-
             <div class="my-3 gap-1 w-full flex flex-wrap">
                 <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-blue-600 rounded-xl p-3 text-center hover:bg-blue-600">Agregar skill</a>
                 <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-red-600 rounded-xl p-3 text-center hover:bg-red-600">Visualizar skill</a>
             </div>
         </div>
-        
 
-        <!-- BenchMark -->
-        
-        <div class="bg-gray-950 w-1/4 rounded-3xl p-5 flex justify-center flex-wrap flex-col">
+        <!-- Benchmark -->
+        <div class="bg-gray-950 w-full rounded-3xl p-5 flex justify-center flex-wrap flex-col">
             <div class="flex justify-center flex-col items-center">
                 <h1 class="text-white text-3xl uppercase font-bold">Benchmark</h1>
                 <div>
@@ -71,19 +64,16 @@
                     </svg>
                 </div>
             </div>
-                
-
             <div class="my-3 gap-1 w-full flex flex-wrap">
                 <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-blue-600 rounded-xl p-3 text-center hover:bg-blue-600">Agregar Benchmark</a>
                 <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-red-600 rounded-xl p-3 text-center hover:bg-red-600">Visualizar Benchmark</a>
             </div>
         </div>
-    
 
         <!-- Score -->
-        <div class="bg-gray-950 w-1/4 rounded-3xl p-5 flex justify-center flex-wrap flex-col">
+        <div class="bg-gray-950 w-full rounded-3xl p-5 flex justify-center flex-wrap flex-col">
             <div class="flex justify-center flex-col items-center">
-                <h1 class="text-white text-3xl uppercase font-bold">score</h1>
+                <h1 class="text-white text-3xl uppercase font-bold">Score</h1>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-award">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -93,15 +83,13 @@
                     </svg>
                 </div>
             </div>
-                
-
             <div class="my-3 gap-1 w-full flex flex-wrap">
                 <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-blue-600 rounded-xl p-3 text-center hover:bg-blue-600">Agregar score</a>
                 <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-red-600 rounded-xl p-3 text-center hover:bg-red-600">Visualizar score</a>
             </div>
         </div>
-    
     </div>
+
 
     
     
