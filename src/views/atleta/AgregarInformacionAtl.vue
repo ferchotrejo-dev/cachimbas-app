@@ -69,7 +69,7 @@ const updateInfo = async () => {
 
                         <div class="flex flex-wrap my-6">
                             <label for="direccion" class="uppercase text-white font-roboto text-lg">
-                                Direccion
+                                Dirección
                             </label>
                             <input id="direccion" type="text" placeholder="Ingresa tu direccion "
                                 class="bg-gray-800 rounded-xl p-7 uppercase text-center w-full font-roboto text-white">
@@ -92,7 +92,7 @@ const updateInfo = async () => {
 
                         <div class="flex flex-wrap my-6">
                             <label for="enfermedad_lesion" class="uppercase text-white font-roboto text-l" g>
-                                enfermedad o lesion
+                                enfermedad o lesión
                             </label>
                             <input id="enfermedad_lesion" type="text" placeholder="Ingresa la enfermedad o lesion"
                                 class="bg-gray-800 rounded-xl uppercase text-center p-2 w-full font-roboto text-white">
@@ -109,9 +109,9 @@ const updateInfo = async () => {
 
                     </div>
                     <input type="submit" value="Agregar Informacion"
-                        class="w-full border-2 border-blue-600 text-white uppercase rounded-xl p-3  text-xl font-roboto hover:bg-blue-600">
+                        class="w-full border-2 border-blue-600 text-white uppercase rounded-xl p-2  text-md font-roboto hover:bg-blue-600">
                 </form>
-                <div class="bg-img-2 bg-cover bg-center  rounded-3xl rounded-l-none w-full lg:w-1/2 border-blue-500">
+                <div class="bg-img-7 bg-cover bg-center  rounded-3xl rounded-l-none w-full lg:w-1/2 border-blue-500">
 
                 </div>
             </div>
