@@ -6,7 +6,7 @@
 <template >
 
     <!-- Container -->
-    <div class="w-full grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 justify-around">
+    <div class="w-full grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 justify-around ">
 
         <!-- PR -->
         <div class="bg-gray-950 w-full rounded-3xl p-5 flex justify-center flex-wrap flex-col">
@@ -26,8 +26,18 @@
                 </div>
             </div>
             <div class="my-3 gap-1 w-full flex flex-wrap">
-                <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-blue-600 rounded-xl p-3 text-center hover:bg-blue-600">Agregar PR</a>
-                <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-red-600 rounded-xl p-3 text-center hover:bg-red-600">Visualizar PR</a>
+                <RouterLink 
+                    class="text-white text-md uppercase font-bold w-full m-2 border-2 border-blue-600 rounded-xl p-3 text-center hover:bg-blue-600"
+                    :to="{ name: 'agregar-pr' }"
+                >
+                    Agregar PR
+                </RouterLink>
+                <RouterLink 
+                    class="text-white text-md uppercase font-bold w-full m-2 border-2 border-red-600 rounded-xl p-3 text-center hover:bg-red-600"
+                    :to="{ name: 'visualizar-pr' }"
+                >
+                    Visualizar PR
+                </RouterLink>
             </div>
         </div>
 
@@ -45,8 +55,18 @@
                 </div>
             </div>
             <div class="my-3 gap-1 w-full flex flex-wrap">
-                <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-blue-600 rounded-xl p-3 text-center hover:bg-blue-600">Agregar skill</a>
-                <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-red-600 rounded-xl p-3 text-center hover:bg-red-600">Visualizar skill</a>
+                <RouterLink 
+                    class="text-white text-md uppercase font-bold w-full m-2 border-2 border-blue-600 rounded-xl p-3 text-center hover:bg-blue-600"
+                    :to="{ name: 'agregar-skill' }"
+                >
+                    Agregar skill
+                </RouterLink>
+                <RouterLink 
+                    class="text-white text-md uppercase font-bold w-full m-2 border-2 border-red-600 rounded-xl p-3 text-center hover:bg-red-600"
+                    :to="{ name: 'visualizar-skill' }"
+                >
+                    Visualizar skill
+                </RouterLink>
             </div>
         </div>
 

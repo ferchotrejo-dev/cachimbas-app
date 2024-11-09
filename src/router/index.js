@@ -65,6 +65,26 @@ const router = createRouter({
           path: 'record',
           name: 'record',
           component: () => import('../views/atleta/AtletaExercice.vue')
+        },
+        {
+          path: 'agregar-pr',
+          name: 'agregar-pr',
+          component: () => import('../views/atleta/AgregarPR.vue')
+        },
+        {
+          path: 'visualizar-pr',
+          name: 'visualizar-pr',
+          component: () => import('../views/atleta/VisualizarPR.vue')
+        },
+        {
+          path: 'agregar-skill',
+          name: 'agregar-skill',
+          component: () => import('../views/atleta/AgregarSkill.vue')
+        },
+        {
+          path: 'visualizar-skill',
+          name: 'visualizar-skill',
+          component: () => import('../views/atleta/VisualizarSkill.vue')
         }
       ]
     },
