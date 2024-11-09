@@ -90,6 +90,11 @@ const router = createRouter({
           path: 'visualizar-skill',
           name: 'visualizar-skill',
           component: () => import('../views/atleta/VisualizarSkill.vue')
+        },
+        {
+          path: 'viewAtleta-membership',
+          name: 'viewAtleta-membership',
+          component: () => import('../views/atleta/ViewMembership.vue')
         }
       ]
     },
