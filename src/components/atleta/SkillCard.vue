@@ -15,7 +15,7 @@
 
         <div class="flex flex-wrap w-full mt-1 gap-2">
             <button
-                class="uppercase text-white font-bold text-md text-center p-1 rounded-lg w-full border-2 border-green-600 hover:bg-green-600"
+                class="uppercase text-white font-bold text-md text-center p-1 rounded-lg w-full border-2 border-yellow-600 hover:bg-yellow-600"
             >
                 editar
             </button>

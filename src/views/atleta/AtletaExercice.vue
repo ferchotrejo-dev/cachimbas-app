@@ -85,8 +85,18 @@
                 </div>
             </div>
             <div class="my-3 gap-1 w-full flex flex-wrap">
-                <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-blue-600 rounded-xl p-3 text-center hover:bg-blue-600">Agregar Benchmark</a>
-                <a class="text-white text-md uppercase font-bold w-full m-2 border-2 border-red-600 rounded-xl p-3 text-center hover:bg-red-600">Visualizar Benchmark</a>
+                <RouterLink 
+                    class="text-white text-md uppercase font-bold w-full m-2 border-2 border-blue-600 rounded-xl p-3 text-center hover:bg-blue-600"
+                    :to="{ name: 'agregar-benchmark' }"
+                >
+                    Agregar Benchmark
+                </RouterLink>
+                <RouterLink 
+                    class="text-white text-md uppercase font-bold w-full m-2 border-2 border-red-600 rounded-xl p-3 text-center hover:bg-red-600"
+                    :to="{ name: 'visualizar-benchmark' }"
+                >
+                    Visualizar Benchmark
+                </RouterLink>
             </div>
         </div>
 

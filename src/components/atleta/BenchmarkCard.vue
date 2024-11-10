@@ -1,4 +1,3 @@
-
 <script setup>
 
 </script>
@@ -9,7 +8,7 @@
         
         <div class="">
             <p class=" text-4xl font-bold text-white uppercase text-center"> <slot name="ejercicio"></slot> </p>
-            <p class=" text-4xl font-bold text-white uppercase text-center"> <slot name="peso"></slot> LB</p>
+            <p class=" text-4xl font-bold text-white uppercase text-center"> <slot name="marca"></slot> reps</p>
             <p class=" text-lg font-extralight text-white uppercase text-center"> <slot name="fecha"></slot></p>
 
         </div>

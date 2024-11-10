@@ -33,7 +33,7 @@
                             <option 
                                 class="uppercase"
                             >
-                                BackSquat
+                                FRAN
                             </option>
 
                             </select>
@@ -41,11 +41,11 @@
 
                     <!-- PESO -->
                     <div class="flex flex-wrap my-6">
-                        <label for="peso" class="uppercase text-white font-bold text-xl">peso</label>
+                        <label for="score" class="uppercase text-white font-bold text-xl">Score</label>
                         <input 
-                            id="peso" 
+                            id="score" 
                             type="number" 
-                            placeholder="TOTAL DE PESO LB"
+                            placeholder="SCORE O MARCA"
                             class="bg-gray-800 rounded-xl text-center p-2 w-full font-bold text-white"
                         >
                     </div>
@@ -63,7 +63,7 @@
 
                     <input 
                         type="submit" 
-                        value="agregar pr"
+                        value="agregar Benchmark"
                         class="w-full my-2 border-2 border-blue-600 text-white uppercase rounded-xl p-2  text-md font-bold hover:bg-blue-600"
                     >
 
@@ -73,20 +73,17 @@
 
             <RouterLink 
                 class="text-white text-md uppercase font-bold w-full block mt-2 border-2 border-red-600 rounded-xl p-2 text-center hover:bg-red-600"
-                :to="{ name: 'visualizar-pr' }"
+                :to="{ name: 'visualizar-benchmark' }"
             >
-                Visualizar PR
+                Visualizar Benchmark
             </RouterLink>
 
         </div>
 
         <!-- IMG -->
-        <div class="bg-img-9 bg-cover bg-center w-full lg:w-1/2 rounded-3xl rounded-l-none hidden lg:block" >
+        <div class="bg-img-6 bg-cover bg-center w-full lg:w-1/2 rounded-3xl rounded-l-none hidden lg:block" >
 
         </div>
 
     </div>
 </template>
-
-
-

@@ -92,6 +92,16 @@ const router = createRouter({
           component: () => import('../views/atleta/VisualizarSkill.vue')
         },
         {
+          path: 'agregar-benchmark',
+          name: 'agregar-benchmark',
+          component: () => import('../views/atleta/AgregarBenchmark.vue')
+        },
+        {
+          path: 'visualizar-benchmark',
+          name: 'visualizar-benchmark',
+          component: () => import('../views/atleta/VisualizarBenchmark.vue')
+        },
+        {
           path: 'viewAtleta-membership',
           name: 'viewAtleta-membership',
           component: () => import('../views/atleta/ViewMembership.vue')
