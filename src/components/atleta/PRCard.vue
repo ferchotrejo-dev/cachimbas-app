@@ -4,14 +4,14 @@
 
 <template>
     <div
-        class=" border-4 border-gray-800 mt-3 md:mt-4 rounded-2xl p-4 w-auto flex gap-3 justify-center items-center flex-wrap">
+        class="border-4 border-gray-800 mt-3 md:mt-4 rounded-2xl p-4 w-auto flex gap-3 justify-center items-center flex-wrap">
 
 
         <div class="">
-            <p class=" text-4xl font-bold text-white uppercase text-center">
+            <p class=" text-3xl font-medium text-white uppercase text-center">
                 <slot name="ejercicio"></slot>
             </p>
-            <p class=" text-4xl font-bold text-white uppercase text-center">
+            <p class=" text-5xl font-bold text-white uppercase text-center ">
                 <slot name="peso"></slot> LB
             </p>
             <p class=" text-lg font-extralight text-white uppercase text-center">

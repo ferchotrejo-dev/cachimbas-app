@@ -22,7 +22,7 @@
             <path d="M4 18l16 0" />
           </svg>
         </div>
-        Cachimbas<span class="text-red-600 letrasp">Box</span>
+        Halcones<span class="text-red-600 letrasp">Box</span>
       </h1>
   
       <div v-if="isMenuOpen" class="absolute inset-0 mt-2 bg-gray-900 shadow-lg rounded-lg py-2 right-0">

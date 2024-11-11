@@ -33,8 +33,8 @@ const { data: weightliftings } = useQuery({
                 class="uppercase bg-gray-800 rounded-xl text-center p-2 w-full lg:w-3/4 font-bold text-white mb-4" />
         </div>
 
-        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" v-for="pr in weightliftings">
-            <PRCard :key="pr._id">
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" >
+            <PRCard v-for="pr in weightliftings">
                 <template v-slot:ejercicio>
                     {{ pr.id_ejercicio.ejercicio }}
                 </template>

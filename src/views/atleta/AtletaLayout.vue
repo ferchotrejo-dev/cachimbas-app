@@ -20,10 +20,12 @@ if (!isError && data.value && data.value.rol && data.value.rol.toString() === '6
 <template>
 
     <section class="grid grid-cols-12 m-2 mt-8">
-        <div
-            class="bg-gray-950 p-4  md:p-4 rounded-3xl flex justify-center  col-span-12  xl:col-span-10 col-start-1 md:col-start-2 xl:col-start-2 sm:col-span-12">
+        <RouterLink
+            class="bg-gray-950 p-4  md:p-4 rounded-3xl flex justify-center  col-span-12  xl:col-span-10 col-start-1 md:col-start-2 xl:col-start-2 sm:col-span-12"
+            :to="{ name: 'dashboard' }"
+        >
             <LogoMenu />
-        </div>
+        </RouterLink>
     </section>
 
     <div class="grid grid-cols-12 gap-4  ">

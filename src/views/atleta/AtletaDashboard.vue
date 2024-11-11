@@ -21,7 +21,7 @@
         <div class="flex justify-center gap-8 flex-wrap xl:flex-nowrap">
 
             <!-- Card PR -->
-            <div class="w-full 2xl:w-1/6">
+            <div class="w-full lg:w-1/4 xl:1/5">
                 <div class="border-2 border-gray-500 rounded-xl flex justify-center items-center">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-barbell">
@@ -41,7 +41,7 @@
             </div>
 
             <!-- Card SKILL -->
-            <div class="w-full 2xl:w-1/6">
+            <div class="w-full lg:w-1/4 xl:1/5">
                 <div class="border-2 border-gray-500 rounded-xl flex justify-center items-center">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-stars">
@@ -57,7 +57,7 @@
             </div>
 
             <!-- Card BENCHMARK -->
-            <div class="w-full 2xl:w-1/6">
+            <div class="w-full lg:w-1/4 xl:1/5">
                 <div class="border-2 border-gray-500 rounded-xl flex justify-center items-center">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-medal-2">
@@ -74,7 +74,7 @@
             </div>
 
             <!-- Card Scores -->
-            <div class="w-full 2xl:w-1/6">
+            <div class="w-full lg:w-1/4 xl:1/5">
                 <div class="border-2 border-gray-500 rounded-xl flex justify-center items-center">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-award">
