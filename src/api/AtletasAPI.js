@@ -23,3 +23,28 @@ export async function getWheightliftings(id) {
         }
     }
 }
+
+
+export async function getExercises() {
+    try {
+        const url = '/atletas/ejercicios'
+        const { data } = await api.get(url)
+        return data
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
+        }
+    }
+}
+
+/* PR */
+export async function createPr(formData) {
+    try {
+        const url = '/atletas/weightlifting'
+        const { data } = await api.post(url, formData)
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
+        }
+    }
+}
