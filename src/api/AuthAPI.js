@@ -43,6 +43,7 @@ export async function authenticateUser(formData) {
         const { data } = await api.post(url, formData)
         localStorage.setItem('AUTH_TOKEN', data)
         const user = await getUser()
+        console.log(user)
         return user.rol
     } catch (error) {
         if (isAxiosError(error) && error.response) {
@@ -88,6 +89,17 @@ export async function updatePasswordWithToken(formData, token) {
 }
 
 export async function getUser() {
+    try {
+        const { data } = await api.get('/auth/user')
+        return data
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
+        }
+    }
+}
+
+export async function getAthlete(id) {
     try {
         const { data } = await api.get('/auth/user')
         return data
