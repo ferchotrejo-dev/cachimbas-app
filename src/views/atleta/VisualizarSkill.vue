@@ -17,7 +17,7 @@ const { data: atleta } = useQuery({
 });
 
 const { data: skills } = useQuery({
-    queryKey: ['skills', atleta],
+    queryKey: ['skills'],
     queryFn: () => getSkills(atleta)
 })
 </script>
@@ -33,7 +33,7 @@ const { data: skills } = useQuery({
         </div>
 
         <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <SkillCard v-for="skill in skills">
+            <SkillCard v-for="skill in skills" :key="skill._id" :id="skill._id">
                 <template v-slot:ejercicio>
                     {{ skill.id_ejercicio.ejercicio }}
                 </template>

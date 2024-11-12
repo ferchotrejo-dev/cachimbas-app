@@ -1,6 +1,7 @@
 <script setup>
 import { getAthlete, getUser, getWheightliftings } from '@/api/AtletasAPI';
 import PRCard from '@/components/atleta/PRCard.vue';
+import { formatDate } from '@/helpers/helper';
 import { useQuery } from '@tanstack/vue-query';
 
 const { data: user } = useQuery({
@@ -16,10 +17,9 @@ const { data: atleta } = useQuery({
 });
 
 const { data: weightliftings } = useQuery({
-    queryKey: ['weightliftings', atleta],
+    queryKey: ['weightliftings'],
     queryFn: () => getWheightliftings(atleta)
 })
-
 
 </script>
 
@@ -33,8 +33,8 @@ const { data: weightliftings } = useQuery({
                 class="uppercase bg-gray-800 rounded-xl text-center p-2 w-full lg:w-3/4 font-bold text-white mb-4" />
         </div>
 
-        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" >
-            <PRCard v-for="pr in weightliftings">
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <PRCard v-for="pr in weightliftings" :key="pr._id" :id="pr._id">
                 <template v-slot:ejercicio>
                     {{ pr.id_ejercicio.ejercicio }}
                 </template>
@@ -44,7 +44,7 @@ const { data: weightliftings } = useQuery({
                 </template>
 
                 <template v-slot:fecha>
-                    {{ pr.fecha }}
+                    {{ formatDate(pr.fecha) }}
                 </template>
             </PRCard>
 

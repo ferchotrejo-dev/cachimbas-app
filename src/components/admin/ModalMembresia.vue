@@ -21,11 +21,14 @@ const { data: atletasData } = useQuery({
 
 
 const filteredUsers = computed(() => {
-  return atletasData.value.filter(user =>
-    user.id_usuario.nombre.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
-    user.id_usuario.apellido.toLowerCase().includes(searchQuery.value.toLowerCase())
-  );
+  return atletasData.value
+    ? atletasData.value.filter(user =>
+      user.id_usuario?.nombre?.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
+      user.id_usuario?.apellido?.toLowerCase().includes(searchQuery.value.toLowerCase())
+    )
+    : [];
 });
+
 
 const closeModalAndReturn = () => {
   props.closeModal();

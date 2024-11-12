@@ -82,9 +82,19 @@ const router = createRouter({
           component: () => import('../views/atleta/VisualizarPR.vue')
         },
         {
+          path: 'actualizar-pr/:id',
+          name: 'actualizar-pr/:id',
+          component: () => import('../views/atleta/ActualizarPR.vue')
+        },
+        {
           path: 'agregar-skill',
           name: 'agregar-skill',
           component: () => import('../views/atleta/AgregarSkill.vue')
+        },
+        {
+          path: 'actualizar-skill/:id',
+          name: 'actualizar-skill/:id',
+          component: () => import('../views/atleta/ActualizarSkill.vue')
         },
         {
           path: 'visualizar-skill',
@@ -100,6 +110,16 @@ const router = createRouter({
           path: 'visualizar-benchmark',
           name: 'visualizar-benchmark',
           component: () => import('../views/atleta/VisualizarBenchmark.vue')
+        },
+        {
+          path: 'agregar-score',
+          name: 'agregar-score',
+          component: () => import('../views/atleta/AgregarScore.vue')
+        },
+        {
+          path: 'visualizar-score',
+          name: 'visualizar-score',
+          component: () => import('../views/atleta/VisualizarScore.vue')
         },
         {
           path: 'viewAtleta-membership',

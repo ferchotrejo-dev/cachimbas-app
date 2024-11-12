@@ -77,6 +77,42 @@ export async function getWheightliftings(id) {
     }
 }
 
+export async function getWheightliftingById(id) {
+    try {
+        const url = `/atletas/weightlifting/${id}`
+        const { data } = await api.get(url)
+        return data
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
+        }
+    }
+}
+
+export async function updatePr({ id, formData }) {
+    try {
+        const url = `/atletas/weightlifting/${id}`
+        const { data } = await api.put(url, formData)
+        return data
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
+        }
+    }
+}
+
+export async function deletePr(id) {
+    try {
+        const url = `/atletas/weightlifting/${id}`
+        const { data } = await api.delete(url)
+        return data
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
+        }
+    }
+}
+
 /* SKILLS */
 export async function createSkill(formData) {
     try {
@@ -93,9 +129,44 @@ export async function createSkill(formData) {
 
 export async function getSkills(id) {
     try {
-        console.log(id)
         const url = `/atletas/skills/${id.value}`
         const { data } = await api.get(url)
+        return data
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
+        }
+    }
+}
+
+export async function getSkillById(id) {
+    try {
+        const url = `/atletas/skill/${id}`
+        const { data } = await api.get(url)
+        return data
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
+        }
+    }
+}
+
+export async function updateSkill({ id, formData }) {
+    try {
+        const url = `/atletas/skills/${id}`
+        const { data } = await api.put(url, formData)
+        return data
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
+        }
+    }
+}
+
+export async function deleteSkill(id) {
+    try {
+        const url = `/atletas/skills/${id}`
+        const { data } = await api.delete(url)
         return data
     } catch (error) {
         if (isAxiosError(error) && error.response) {
