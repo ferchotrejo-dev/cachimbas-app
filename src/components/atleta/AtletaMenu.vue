@@ -5,7 +5,8 @@
 <template>
     <div class=" w-24 xl:w-28 p-3">
 
-        <div class="py-3 w-full md:w-4/5 lg:w-4/5 xl:w-5/5 bg-gray-950 rounded-3xl h-full grid grid-rows-9 justify-items-center hidden md:block">
+        <div
+            class="py-3 w-full md:w-4/5 lg:w-4/5 xl:w-5/5 bg-gray-950 rounded-3xl h-full grid grid-rows-9 justify-items-center hidden md:block">
 
             <!-- Icon Barbell -->
             <RouterLink 
@@ -64,9 +65,13 @@
             </RouterLink>
 
             <!-- Icon Logout -->
-            <div class="flex justify-center row-start-9 transition-transform transform-gpu mt-32  hover:scale-125 cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout md:w-14 md:h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <div
+                class="flex justify-center row-start-9 transition-transform transform-gpu mt-32  hover:scale-125 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-logout md:w-14 md:h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16"
+                    width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6B7280" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
                     <path d="M9 12h12l-3 -3" />
                     <path d="M18 15l3 -3" />

@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import HomeView from '../views/homeView.vue';
-import AuthLayout from '../views/auth/AuthLayout.vue'
-import AtletaLayout from '../views/atleta/AtletaLayout.vue'
-
+import AuthLayout from '../views/auth/AuthLayout.vue';
+import AtletaLayout from '../views/atleta/AtletaLayout.vue';
+import Dashboard from '../views/atleta/DashboardAtleta.vue';
 import AdminLayout from '../views/admin/AdminLayout.vue';
+import VisualizarAviso from '../views/atleta/VisualizarAviso.vue';
+import AgregarInformacioAtl from '../views/atleta/AgregarInformacioAtl.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -170,6 +172,7 @@ const router = createRouter({
         }
       ]
     },
+   
   ]
 })
 
