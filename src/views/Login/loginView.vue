@@ -23,8 +23,20 @@ const { mutate } = useMutation({
     onError: (error) => {
         errors.value = error.message
     },
-    onSuccess: () => {
-        router.push('/')
+    onSuccess: (data) => {
+        console.log(data)
+        if (data === '666100f6f4a96985bdc69840') {
+            router.push('/admin/dashboard')
+        }
+
+        if (data === '666100f1f4a96985bdc6983e') {
+            router.push('/atleta/dashboard')
+        }
+
+        if (data === '666100faf4a96985bdc69842') {
+            router.push('/')
+        }
+
     }
 })
 

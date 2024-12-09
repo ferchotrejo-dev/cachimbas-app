@@ -53,13 +53,78 @@ const router = createRouter({
       children: [
         {
           path: 'dashboard',
-          name: 'resumen',
+          name: 'dashboard',
           component: () => import('../views/atleta/AtletaDashboard.vue'),
+        },
+        {
+          path: 'info-atleta',
+          name: 'info-atleta',
+          component: () => import('../views/atleta/AgregarInformacionAtl.vue'),
         },
         {
           path: 'calculadora',
           name: 'calculadora-inicio',
           component: () => import('../views/atleta/CalculadoraView.vue')
+        },
+        {
+          path: 'record',
+          name: 'record',
+          component: () => import('../views/atleta/AtletaExercice.vue')
+        },
+        {
+          path: 'agregar-pr',
+          name: 'agregar-pr',
+          component: () => import('../views/atleta/AgregarPR.vue')
+        },
+        {
+          path: 'visualizar-pr',
+          name: 'visualizar-pr',
+          component: () => import('../views/atleta/VisualizarPR.vue')
+        },
+        {
+          path: 'actualizar-pr/:id',
+          name: 'actualizar-pr/:id',
+          component: () => import('../views/atleta/ActualizarPR.vue')
+        },
+        {
+          path: 'agregar-skill',
+          name: 'agregar-skill',
+          component: () => import('../views/atleta/AgregarSkill.vue')
+        },
+        {
+          path: 'actualizar-skill/:id',
+          name: 'actualizar-skill/:id',
+          component: () => import('../views/atleta/ActualizarSkill.vue')
+        },
+        {
+          path: 'visualizar-skill',
+          name: 'visualizar-skill',
+          component: () => import('../views/atleta/VisualizarSkill.vue')
+        },
+        {
+          path: 'agregar-benchmark',
+          name: 'agregar-benchmark',
+          component: () => import('../views/atleta/AgregarBenchmark.vue')
+        },
+        {
+          path: 'visualizar-benchmark',
+          name: 'visualizar-benchmark',
+          component: () => import('../views/atleta/VisualizarBenchmark.vue')
+        },
+        {
+          path: 'agregar-score',
+          name: 'agregar-score',
+          component: () => import('../views/atleta/AgregarScore.vue')
+        },
+        {
+          path: 'visualizar-score',
+          name: 'visualizar-score',
+          component: () => import('../views/atleta/VisualizarScore.vue')
+        },
+        {
+          path: 'viewAtleta-membership',
+          name: 'viewAtleta-membership',
+          component: () => import('../views/atleta/ViewMembership.vue')
         }
       ]
     },
