@@ -22,7 +22,7 @@
         <!-- Contenedor de los avisos con scroll -->
         <div class="max-h-96 overflow-y-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div v-for="i in 5" :key="i" class="border-2 border-white mr-4 rounded-xl text-white text-center p-2 bg-gray-950 mt-4 shadow-sm h-44">
+            <div v-for="i in 0" :key="i" class="border-2 border-white mr-4 rounded-xl text-white text-center p-2 bg-gray-950 mt-4 shadow-sm h-44">
               Aviso {{ i }}
             </div>
           </div>

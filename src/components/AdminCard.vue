@@ -5,7 +5,7 @@
 
 <template>
     <div>
-        <div class="border-2 border-gray-500 rounded-3xl p-2 xl:p-3 flex w-full xl:w-3/4 items-center justify-center">
+        <div class="border-2 border-gray-500 rounded-3xl p-1 xl:p-2 flex w-full items-center justify-center">
             <div>
                 <slot name="icono"></slot>
             </div>
@@ -16,8 +16,8 @@
                 </h1>
             </div>
         </div>
-        <div class=" w-full xl:w-3/4">
-            <h3 class="text-white font-light uppercase text-md xl:text-xl text-center">
+        <div class=" w-full">
+            <h3 class="text-white font-light uppercase text-md 2xl:text-xl text-center">
                 <slot name="texto"></slot>
             </h3>
         </div>

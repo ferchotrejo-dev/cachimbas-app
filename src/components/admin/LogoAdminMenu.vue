@@ -12,7 +12,7 @@
 
 <div class="relative">
     <h1 class="text-5xl md:text-6xl font-bold uppercase text-white flex items-center letrasp">
-      <div class="inline-block transition-transform transform-gpu hover:scale-125 cursor-pointer w-10 h-10 mr-4" @click="toggleMenu">
+      <div class="inline-block cursor-pointer w-10 h-10 mx-2 -mt-1" @click="toggleMenu">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2 md:hidden mr-2 "
              width="50" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none"
              stroke-linecap="round" stroke-linejoin="round">
@@ -22,7 +22,7 @@
           <path d="M4 18l16 0" />
         </svg>
       </div>
-      Halcones<span class="text-red-600 letrasp">Box</span>
+      <div>Cachimbas<span class="text-red-600 letrasp">Box</span></div>
     </h1>
 
     <div v-if="isMenuOpen" class="absolute inset-0 mt-2 bg-gray-900 shadow-lg rounded-lg py-2 right-0">

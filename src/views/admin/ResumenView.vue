@@ -7,12 +7,12 @@
 
 <template>
     <div class="bg-gray-950 w-full rounded-3xl p-5 ">
-        <h1 class="text-white uppercase font-bold text-3xl">Información atletas</h1>
+        <h1 class="text-white uppercase font-bold text-xl md:text-3xl">Información atletas</h1>
 
-        <div class="my-3 grid grid-cols-4 w-full gap-8">
+        <div class="my-3 flex justify-between flex-wrap xl:flex-nowrap w-full">
 
             <!-- Card Total Usuarios -->
-            <AdminCard>
+            <AdminCard class="w-full lg:w-1/4 xl:1/5 flex justify-center flex-wrap">
                 <template v-slot:icono>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users w-16 h-16 xl:w-20 xl:h-20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2563eb" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -31,7 +31,7 @@
             </AdminCard>
 
             <!-- Card Usuarios Activos -->
-            <AdminCard>
+            <AdminCard class="w-full lg:w-1/4 xl:1/5 flex justify-center flex-wrap">
                 <template v-slot:icono>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-check w-16 h-16 xl:w-20 xl:h-20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#16a34a" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -49,7 +49,7 @@
             </AdminCard>
 
             <!-- Card Total Usuarios Pendientes -->
-            <AdminCard>
+            <AdminCard class="w-full lg:w-1/4 xl:1/5 flex justify-center flex-wrap">
                 <template v-slot:icono>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-exclamation w-16 h-16 xl:w-20 xl:h-20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ca8a04" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -68,7 +68,7 @@
             </AdminCard>
 
             <!-- Card Total Usuarios Inactivos -->
-            <AdminCard>
+            <AdminCard class="w-full lg:w-1/4 xl:1/5 flex justify-center flex-wrap">
                 <template v-slot:icono>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-cancel w-16 h-16 xl:w-20 xl:h-20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc2626" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -91,12 +91,12 @@
 
     <!-- Membresias -->
     <div class="bg-gray-950 w-full rounded-3xl p-5 my-10">
-        <h1 class="text-white uppercase font-bold text-3xl">Información membresias</h1>
+        <h1 class="text-white uppercase font-bold text-xl md:text-3xl">Información membresias</h1>
 
-        <div class="my-3 grid grid-cols-4 w-full gap-8">
+        <div class="my-3 flex justify-center flex-wrap xl:flex-nowrap w-full ">
 
             <!-- Card Total Usuarios -->
-            <AdminCard>
+            <AdminCard class="w-full lg:w-1/4 xl:1/5 flex justify-center flex-wrap">
                 <template v-slot:icono>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card w-16 h-16 xl:w-20 xl:h-20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2563eb" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -115,7 +115,7 @@
             </AdminCard>
 
             <!-- Card Usuarios Activos -->
-            <AdminCard>
+            <AdminCard class="w-full lg:w-1/4 xl:1/5 flex justify-center flex-wrap">
                 <template v-slot:icono>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card w-16 h-16 xl:w-20 xl:h-20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#16a34a" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -134,7 +134,7 @@
             </AdminCard>
 
             <!-- Card Total Usuarios Pendientes -->
-            <AdminCard>
+            <AdminCard class="w-full lg:w-1/4 xl:1/5 flex justify-center flex-wrap">
                 <template v-slot:icono>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card-off w-16 h-16 xl:w-20 xl:h-20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ca8a04" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -156,7 +156,7 @@
             </AdminCard>
 
             <!-- Card Total Usuarios Inactivos -->
-            <AdminCard>
+            <AdminCard class="w-full lg:w-1/4 xl:1/5 flex justify-center flex-wrap">
                 <template v-slot:icono>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-x w-16 h-16 xl:w-20 xl:h-20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#dc2626" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

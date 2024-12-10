@@ -127,6 +127,16 @@ const router = createRouter({
           path: 'viewAtleta-membership',
           name: 'viewAtleta-membership',
           component: () => import('../views/atleta/ViewMembership.vue')
+        },
+        {
+          path: 'view-reminder',
+          name: 'view-reminder',
+          component: () => import('../views/atleta/VisualizarAviso.vue')
+        },
+        {
+          path: 'forgot-password',
+          name: 'forgot-password',
+          component: () => import('../views/auth/ForgotPasswordView.vue')
         }
       ]
     },
@@ -137,7 +147,7 @@ const router = createRouter({
       children: [
         {
           path: 'dashboard',
-          name: 'resumen',
+          name: 'dashboard',
           component: () => import('../views/admin/ResumenView.vue'),
         },
         {
