@@ -46,6 +46,11 @@ const router = createRouter({
           name: "new-password",
           component: () => import("../views/auth/NewPasswordView.vue"),
         },
+        {
+          path: "sing-up",
+          name: "sing-up",
+          component: () => import("../views/auth/SingUpView.vue"),
+        },
       ],
     },
     {
@@ -55,7 +60,7 @@ const router = createRouter({
       children: [
         {
           path: "dashboard",
-          name: "dashboard",
+          name: "atleta-dashboard",
           component: () => import("../views/atleta/AtletaDashboard.vue"),
         },
         {
@@ -134,9 +139,14 @@ const router = createRouter({
           component: () => import("../views/atleta/VisualizarAviso.vue"),
         },
         {
-          path: "forgot-password",
-          name: "forgot-password",
+          path: "change-password",
+          name: "change-password",
           component: () => import("../views/auth/ForgotPasswordView.vue"),
+        },
+        {
+          path: "entrenamiento-generado",
+          name: "entrenamiento-generado",
+          component: () => import("../views/atleta/EntrenamientoGenerado.vue"),
         },
       ],
     },

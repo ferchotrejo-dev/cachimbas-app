@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="bg-gray-950 w-full rounded-3xl p-5 h-full flex gap-5 flex-wrap">
+    <div class="bg-gray-950 w-full rounded-3xl p-5 h-full flex gap-5 flex-wrap justify-center">
         <div>
             <h1 class="text-white text-3xl uppercase font-bold text-center">Detalles de la membresia</h1>
             <!-- Body -->

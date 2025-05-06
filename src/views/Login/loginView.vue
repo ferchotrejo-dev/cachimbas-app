@@ -1,56 +1,60 @@
 <script setup>
-
-import { reactive, ref } from 'vue';
+import { reactive, ref, watch } from 'vue'
 import { authenticateUser } from '/src/api/AuthAPI.js'
 import { useMutation } from '@tanstack/vue-query'
 import { useRouter } from 'vue-router'
 
-import Logo from '/src/components/Logo.vue';
-import Alerta from '/src/components/Alerta.vue';
+import Logo from '/src/components/Logo.vue'
+import Alerta from '/src/components/Alerta.vue'
 
-
-const errors = ref('');
+const errors = ref('')
 
 const dataLogin = reactive({
-    correo: '',
-    password: ''
-});
+  correo: '',
+  password: ''
+})
 
 const router = useRouter()
 
+// ⏳ Ocultar errores tras 3 segundos
+watch(errors, (val) => {
+  if (val) {
+    setTimeout(() => {
+      errors.value = ''
+    }, 3000)
+  }
+})
+
 const { mutate } = useMutation({
-    mutationFn: authenticateUser,
-    onError: (error) => {
-        errors.value = error.message
-    },
-    onSuccess: (data) => {
-        console.log(data)
-        if (data === '666100f6f4a96985bdc69840') {
-            router.push('/admin/dashboard')
-        }
-
-        if (data === '666100f1f4a96985bdc6983e') {
-            router.push('/atleta/dashboard')
-        }
-
-        if (data === '666100faf4a96985bdc69842') {
-            router.push('/')
-        }
-
+  mutationFn: authenticateUser,
+  onError: (error) => {
+    errors.value = error.message
+  },
+  onSuccess: (data) => {
+    if (data === '666100f6f4a96985bdc69840') {
+      router.push('/admin/dashboard')
     }
+
+    if (data === '666100f1f4a96985bdc6983e') {
+      router.push('/atleta/dashboard')
+    }
+
+    if (data === '666100faf4a96985bdc69842') {
+      router.push('/')
+    }
+  }
 })
 
 const login = async () => {
-    if (Object.values(dataLogin).includes('')) {
-        errors.value = 'Todos los campos son obligatorios';
-        return
-    }
+  if (Object.values(dataLogin).includes('')) {
+    errors.value = 'Todos los campos son obligatorios'
+    return
+  }
 
-    mutate(dataLogin)
-
+  mutate(dataLogin)
 }
-
 </script>
+
 
 <template>
 
@@ -93,11 +97,18 @@ const login = async () => {
                 <!-- Botones -->
                 <div class="flex justify-center items-center flex-col my-3 gap-6 mb-20">
                     <input type="submit" value="iniciar sesión"
-                        class="w-full xl:w-1/2 border-2 border-blue-600 text-white uppercase rounded-xl p-3  text-xl font-bold hover:bg-blue-600">
+                        class="w-full xl:w-1/2 border-2 border-blue-600 text-white uppercase rounded-xl p-3 text-xl font-bold hover:bg-blue-600">
 
                     <RouterLink
-                        class="uppercase text-white font-normal hover:font-bold text-lg lg:m-3 border-b-2 border-red-600 w-full xl:w-1/2 text-center"
-                        to="/auth/forgot-password">
+                        class="w-full xl:w-1/2 border-2 text-center border-orange-600 text-white uppercase rounded-xl p-3 text-xl font-bold hover:bg-orange-600"
+                        :to="{ name: 'sing-up' }"
+                    >
+                        Registrarse
+                    </RouterLink>
+
+                    <RouterLink
+                        class="uppercase text-white font-normal hover:font-bold text-lg lg:m-3 border-b-2 border-orange-600 w-full xl:w-1/2 text-center"
+                        :to="{ name: 'forgot-password' }">
                         Recuperar contraseña
                     </RouterLink>
                 </div>

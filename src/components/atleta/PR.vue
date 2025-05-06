@@ -26,42 +26,29 @@
 </script>
 
 <template>
-    
-    <form 
-        action=""
-        class="w-full"
-        @submit.prevent="definirPR"
-    >
-
-        <Alerta
-            v-if="error"
-        >
-            {{ error }}
-        </Alerta>
-
-        <div class="grid gap-3">
-            <label 
-                for="nuevo-pr"
-                class="text-center text-3xl font-bold text-white"
-            >
-                Definir el PR
-            </label>
-            <input 
-                id="nuevo-pr"
-                type="number"
-                placeholder="Ingresa el PR"
-                class="p-2 rounded-2xl text-center font-bold bg-gray-900 text-xl text-white" 
-                min="0"
-                v-model.number="pr"
-            >
-        </div>
-
-        <input 
-            type="submit"
-            value="Calcular"
-            class="uppercase rounded-2xl mt-4 p-2 text-xl text-white font-bold w-full border-2 border-blue-600 hover:bg-blue-600 hover:cursor-pointer"
-        >
-
+    <form action="" class="w-full" @submit.prevent="definirPR">
+      <Alerta v-if="error">
+        {{ error }}
+      </Alerta>
+  
+      <div class="grid gap-3">
+        <label for="nuevo-pr" class="text-center text-3xl font-bold text-white">
+          INgresa tú 100%
+        </label>
+        <input
+          id="nuevo-pr"
+          type="number"
+          placeholder="Ingresa tu 100%"
+          class="p-2 rounded-2xl text-center font-bold bg-gray-900 text-2xl text-white"
+          min="0"
+          v-model.number="pr"
+        />
+      </div>
+  
+      <input
+        type="submit"
+        value="Calcular"
+        class="uppercase rounded-2xl mt-4 p-2 text-xl text-white font-bold w-full border-4 border-orange-600 hover:bg-orange-600 hover:cursor-pointer"
+      />
     </form>
-
-</template>
+  </template>
