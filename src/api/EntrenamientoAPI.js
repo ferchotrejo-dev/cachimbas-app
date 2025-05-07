@@ -1,9 +1,10 @@
+import api from '@/lib/axios'
 import axios from 'axios'
 
 export async function generarEntrenamiento({ objetivo, ejercicioBase }) {
     try {
-        const url = 'http://localhost:4000/api/entrenamiento/generar'
-        const { data } = await axios.post(url, {
+        const url = '/entrenamiento/generar'
+        const { data } = await api.post(url, {
             objetivo,
             ejercicio_base: ejercicioBase // <- aquí está la clave
         })
