@@ -40,7 +40,7 @@ const handleComplete = () => {
         <h1 class="text-4xl font-black text-white uppercase">Confirma tu cuenta</h1>
         <p className="text-xl lg:text-2xl font-light text-white mt-5 uppercase">
             Ingresa el código que recibiste por
-            <span className=" text-red-600 font-bold"> e-mail</span>
+            <span className=" text-orange-500 font-bold"> e-mail</span>
         </p>
 
         <Alerta v-if="errors">

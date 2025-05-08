@@ -16,8 +16,8 @@ const handleTokenValidation = (valid, tokenValue) => {
     <div class="text-center p-16 bg-gray-950 w-full rounded-3xl flex flex-col justify-center items-center">
         <h1 class="text-4xl font-black text-white uppercase">Reestablece tu contraseña</h1>
         <p class="text-xl lg:text-2xl font-light text-white mt-5 uppercase">
-            Ingresa el codigo que recibiste
-            <span class="text-red-600 font-bold"> por email</span>
+            Ingresa tu nueva
+            <span class="text-orange-500 font-bold"> contraseña</span>
         </p>
 
         <NewPasswordToken v-if="!isValidToken" @token-validated="handleTokenValidation" />

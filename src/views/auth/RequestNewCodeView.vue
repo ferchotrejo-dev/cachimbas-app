@@ -35,7 +35,7 @@ const handleSubmit = () => {
         <h1 class="text-4xl font-black text-white uppercase">Confirma tu cuenta</h1>
         <p className="text-xl lg:text-2xl font-light text-white mt-5 uppercase">
             Ingresa tu e-mail y enviaremos un nuevo
-            <span className=" text-red-600 font-bold"> codigo de confirmacion</span>
+            <span className=" text-orange-500 font-bold"> codigo de confirmacion</span>
         </p>
 
 

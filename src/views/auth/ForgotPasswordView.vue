@@ -35,7 +35,7 @@ const handleSubmit = () => {
         <h1 class="text-4xl font-black text-white uppercase">Reestablece tu contraseña</h1>
         <p className="text-xl lg:text-2xl font-light text-white mt-5 uppercase">
             ¿Olvidaste tu password? coloca tu email y
-            <span className=" text-red-600 font-bold"> recibe instrucciones</span>
+            <span className=" text-orange-500 font-bold"> recibe instrucciones</span>
         </p>
 
 

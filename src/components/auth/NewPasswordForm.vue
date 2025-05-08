@@ -54,14 +54,14 @@ const handleSubmit = () => {
                     v-model="newPassword.password">
             </div>
             <div class="flex flex-wrap my-6">
-                <label for="password_confirmation" class="uppercase text-white font-bold text-xl">Repite tu
+                <label for="password_confirmation" class="uppercase text-white font-bold text-xl">Confirma tu
                     Contraseña</label>
                 <input id="password_confirmation" type="text" placeholder="Repite tu contraseña"
                     class="bg-gray-800 rounded-xl text-center p-2 w-full font-bold text-white"
                     v-model="newPassword.password_confirmation">
             </div>
         </div>
-        <input type="submit" value="Enviar código"
+        <input type="submit" value="Cambiar contraseña"
             class="w-full border-2 border-blue-600 text-white uppercase rounded-xl p-3 text-xl font-bold hover:bg-blue-600">
     </form>
 </template>
